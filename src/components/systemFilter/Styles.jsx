@@ -60,6 +60,20 @@ export const ProductsList = styled.li`
     background: var(--grey-500);
   }
 
+  &.ativo {
+    background: var(--grey-500);
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 10px;
+      height: 100%;
+      background: var(--grey-600);
+    }
+  }
+
   @media (max-width: 900px) {
     font-size: 18px;
   }

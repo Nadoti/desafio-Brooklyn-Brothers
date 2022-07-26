@@ -21,7 +21,6 @@ export function SystemFilter() {
           return valor.category.name.toUpperCase().includes(searchValue.toUpperCase())
         })
        setCategories(category)
-      return
     } else {
       setCategories(apiProducts)
     }

@@ -14,7 +14,11 @@ function DadosProdutos({children}) {
   function changeProduct(event) {
     const filter = api.data.nodes.filter(val => event.target.id === val.id)
     setProductChosen(filter[0])
-    
+    const li = document.querySelectorAll('li')
+    li.forEach(e => {
+      e.classList.remove('ativo')
+    })
+    event.target.className = `${event.target.className} ativo`
   }
 
 
