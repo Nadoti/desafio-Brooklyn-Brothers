@@ -23,7 +23,7 @@ export const Title = styled.h1`
 export const Category = styled.p`
   font-size: 22px;
   font-family: Roboto;
-  color: #524E4E;
+  color: var(--grey-750);
   margin-bottom: 10px;
 
   @media (max-width: 900px) {
@@ -40,7 +40,7 @@ export const Category = styled.p`
 export const Description = styled.p`
   font-size: 16px;
   font-family: Roboto;
-  color: #A4A0A0;
+  color: var(--grey-550);
 
   @media (max-width: 900px) {
     font-size: 18px;

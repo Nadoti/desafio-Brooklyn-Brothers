@@ -2,9 +2,9 @@ import styled from "styled-components"
 
 
 export const BoxInfoLeft = styled.div`
-  border-right: 2px solid #000;
+  border-right: 2px solid var(--black-1000);
   text-align: center;
-  background: #E7E7E7;
+  background: var(--grey-200);
 
   @media (max-width: 900px) {
     border: none;
@@ -12,7 +12,7 @@ export const BoxInfoLeft = styled.div`
 `
 
 export const BoxSearchProducts = styled.div`
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid var(--black-1000);
   display: flex;
   flex-direction: column;
   padding: 10px;
@@ -44,9 +44,9 @@ export const BoxListProducts = styled.ul`
   }
 
   &::-webkit-scrollbar-thumb {
-    background: #5B5959;
-    border-left: 4px solid #E7E7E7;
-    border-right: 4px solid #E7E7E7;
+    background: var(--grey-700);
+    border-left: 4px solid var(--grey-200);
+    border-right: 4px solid var(--grey-200);
   }
 `
 
@@ -57,7 +57,7 @@ export const ProductsList = styled.li`
   position: relative;
 
   &:hover {
-    background: #A7A1A1;
+    background: var(--grey-500);
   }
 
   @media (max-width: 900px) {
